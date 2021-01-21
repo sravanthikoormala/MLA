@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
+    </head>
+    <script>
+  
+       function fn2(){
+       var password=document.getElementById("password").value;
+        var cpassword = document.getElementById("cpassword").value;
+        if(password==cpassword){
+            alert("success");
+        }
+        else{
+            alert("check");
+        }
+    }
+    </script>
+<body>
+    <div class="body">
+    <div class="container">
+Password:<input type="password" class="form-control" id="password"><br>
+Confirm Password:<input type="password" class="form-control" id="cpassword"><br>
+<input class="btn btn-primary" type="submit" onclick=fn2()>
+</div>
+</div>
+</body>
+</html>

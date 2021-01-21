@@ -1,0 +1,520 @@
+An application that is stored in web app server is called web application.
+some portions of the web application will be running in the server itself. 
+	They are called back end
+
+some portions of the web application will be runing in the client machine (browser)
+	They are called front end
+
+angular
+	i can install 
+	can i ask every client/user to install? NO. so good news is angular is used
+(typescript is translated into javascript)		to create the project. but when it is executed, it is simple javascript only
+	every browser supports javascript.
+
+	jquery?		is an application of javascript.
+
+every browser understands HTML, CSS, javascript, Jquery
+
+there is no compilation for HTML. only interpretation.
+
+HTML 5			4
+
+	web 2.0		2nd generation of web technologies
+	rich internet applications	RIA
+
+	client side events to access server side programs	async	AJAX
+
+
+HTML HyperText Markup Language	is a text based markup language
+
+
+Elements		tags are called as elements
+Attributes
+Entities		there are some characters cannot be used in html
+			entities are used
+			greater then symbol		&gt;
+			&lt;
+			&nbsp;			this is space
+namespace		i can define new elements and they can be imported to a html document using namespace				
+<html xmlns:th="http://www.thymeleaf.org">
+
+<element attribute="value" attribute2="value" ></element>		html
+
+www consortium		w3c
+
+
+attribute value must be in double quotes only.
+<table border=1>
+</table>
+
+a markup file must have a root element.
+all elements must be enclosedd inside the root element.
+there can be only 1 root element.
+
+rama         krishna
+ramakrishna
+
+i want to print 			a>b
+
+<a href="a>b"
+<p>this is a<b </p>
+
+ELEMENTS MUST BE CLOSED.
+1) CONTENT ELEMENTS		START TAG AND END TAG
+	Ex:			<body>	</body>
+2) EMPTY ELEMENTS		DO NOT HAVE END TAG		
+	Ex:			<BR/>		<HR/>	<br>	<hr>
+3) some times there will be nesting of elements (tag)
+	<tr>
+		<td>
+		</td>
+	</tr>`
+		the nesting should be proper. no overlapping of elements
+
+index.html		(this will be home page for our project)	default/index
+
+page2.htm		htm is used to create segments. only a portion of the page created.
+			later, you can pull this segment from a complete html file
+
+
+html file is considered as a document.	documents can be represented as objects in programs
+access various parts of the document using id and class
+
+in html
+	ID must be unique
+
+
+styles like CSS to apply for a particular element.	(use ID for that)
+i want to apply style for many elements whose class is same	(use class for that)
+	<p class="mandatory">
+	<button class="btn btn-success">	multiple class for 1 element also
+	<input type=text class="txt">
+
+	for btn class they will have style	.btn{	display:block	}
+						.btn-success{	color:green	}
+		dot	(.) is used to refer the class name
+
+
+
+the best way to learn html:
+1) use w3schools.com/html
+2) use visual studio code (free downloadable)	different from visual studio 
+
+notepad
+
+from Balasa
+additional text elements <b> - Bold text
+<strong> - Important text			HTML5 strong and bold
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text				HTML5
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text					log base 10
+<sup> - Superscript text				a square + 2 ab + b square
+
+from Pavithra
+<div> tag is a blockline whih starts in a new line, anchor tag<a> , <span> , <img> , <code> , <cite> , <button> , <input> are inline elements which does't start in a new line, <br><hr> are additional elements
+
+
+
+display text in a html page, we use
+<p>
+these following 2 containers used much in web pages. The difference is "block" and "inline"
+<div>	block		if we add multiple <div> elements in a page, they are displayed
+			one in a line
+			that is called block
+<span>	in line
+
+
+
+there is a default style for an element.
+for div,
+
+div{
+	display:block;
+}
+
+
+<h1></h1> to <h6></h6> tags are headings sir
+
+<h1>
+
+learn about
+headings
+alignment	<center> is an element	<p align="center">	here align is an attribute of p element
+
+
+
+lists:
+ordered list
+unordered list
+
+
+Identify how we can use <ol> and <ul>	also find how to specify the starting number in ol
+a)
+b)
+c)
+
+5)
+6)
+7)
+
+i)
+ii)
+iii)
+
+find out the methods to do ordered list
+
+
+<ol start="5">
+
+type="1"    The list items will be numbered with numbers (default)
+type="A"    The list items will be numbered with uppercase letters
+type="a"    The list items will be numbered with lowercase letters
+type="I"    The list items will be numbered with uppercase roman numbers
+type="i"    The list items will be numbered with lowercase roman numbers
+
+<h2>An ordered HTML list</h2>
+        <ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+ <h2>An unordered HTML list</h2>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h2>An ordered HTML list</h2>
+        <ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+ <h2>An unordered HTML list</h2>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+<ol>
+    <li value="100">hi</li>
+    <li>world</li>
+    <li>hello</li>
+    
+  </ol>
+
+
+<ol start="a" type="a">
+	<li value="c">
+
+
+by default, without top element like <ol> or <ul> we can use <li> alone, which means
+	<ul> default type
+	bullets
+
+anchor <a href="">click here</a>		url	uniform resource locator
+1) how to open the link in a different window?	_blank		(there are other options _parent	_top	etc.
+link to some file in same computer.????
+	always suggest "relative path" rather than absolute path.
+	absolute path: ex:	"d:\jag\html\two.html"			
+	relative path: ex:	"\sub folder name\two.html"		in our case "two.html"
+	two.html is present in the same folder as the one.html. so file name is enough. if we give complete path, then after we upload the project folder into server, the path may be irrelevent. 
+	picture as a hyper link.
+
+Button link:?
+	
+
+
+https://www.w3schools.com/html/html_links.asp
+
+
+
+
+link
+target _blank
+relative
+image as link
+mailto:
+button as link document.location
+
+
+    User Name: <input type="text" name="" id=""><br>
+    First Name: <input type="text" name="" id=""><br>
+    Last Name: <input type="text" name="" id=""><br>
+    Password: <input type="password" name="" id=""><br>
+    Confirm Password: <input type="password" name="" id="">
+<input type="submit" value=""><input type="reset" value="">
+
+
+
+
+HTML Tables
+• Table Elements
+• Structuring a Table
+• Table Data
+• Spanning Columns and Rows		rowspan & colspan
+• Formatting Tables
+• Table Formatting
+HTML Images and Objects
+• Image and Object Concepts
+• Adding Images
+• Adding Objects
+
+
+form is used for user interaction
+user input values
+
+<form>
+	can group input elements 
+	<input type=submit />
+	<input type=reset />	
+</form>
+
+
+Reset	-	to clear the input elements
+Submit	-	used to send the form data to a script
+
+?	refers to query string
+url?key1=value1&key2=value2&key=value
+
+http is a stateless protocol
+
+id vs name
+there can be many elements with same name	(why should we have same name for many input elements?)
+every element should have different id (id must be unique)
+
+html lables
+
+identify various form elements 
+text
+number
+range
+email
+date
+file
+radio
+check box
+textarea		address (multiple lines)
+select - option			vs 		text - datalist
+	select is read only (will not allow user to type)		
+Access keys
+uploading files
+
+
+<select>
+	<option>India</option>		this "India" will be displayed/ visible to the users. but there is no value
+	<option value="Bharat">India</option>	"India" is visible. program will get "Bharat" as the selected value
+</select>
+
+
+user wants to see only the "productName"		but what we store in the database table in sales table?
+productId will be stored in the "sales" table.	
+Product Id (not product name). but we display product name so that user will feel easy to select the product
+
+
+    <form action="">
+        <label for="txtName">Name:</label> <input type="text" name="" id="txtName" required="required"><br>
+        Password: <input type="password" name="" id="" required><br>
+        Phone number: <input type="number" name="" id="" required><br>
+        Email address: <input type="email" name="" id="" required><br>
+        Rating: <input type="range" name="" id="" min="1" max="10"><br>
+        Date of Birth: <input type="date" name="" id=""><br>
+        Gender: 
+        <input type="radio" name="rdoGender" id="rdoFemale">Female</input>
+        <input type="radio" name="rdoGender" id="rdoMale">Male</input>
+        <input type="radio" name="rdoGender" id="rdoOther">Other</input><br>
+        Account type: 
+        <input type="radio" name="rdoAccountType" id="">Savings</input>
+        <input type="radio" name="rdoAccountType" id="">Current</input>
+        <br>
+        Using Labels:
+        <br>
+        Account type:
+        <input type="radio" name="rdoat" id="rdoSavings"><label for="rdoSavings">Savings</label>
+        <input type="radio" name="rdoat" id="rdoCurrent"><label for="rdoCurrent">Current</label>
+        <br>
+        <input type="submit">
+    </form>
+
+    Select:<select name="" id="ddlCountries" onclick="fn1()">
+        <option value="">Choose...</option>
+        <option value="IND">India</option>
+        <option value="AUS">Australia</option>
+        <option value="Sri lanka"></option>
+        <option value="JPN">Japan</option>
+        <option value="">Indian Ocean</option>
+        <option value="">Asia</option>
+        <option value="">Asia Pacific</option>
+    </select>
+    <br>
+    Data List:<input type="text" name="abcd" id="" list="countries">
+    <datalist id="countries">
+        <option value="Choose...">
+            <option value="India">
+                <option value="Australia">
+                <option value="Sri lanka">
+                <option value="Japan">
+                <option value="Indian Ocean">
+                <option value="Asia">
+                <option value="Asia Pacific">
+            </datalist>
+    <br>
+
+
+html 5 semantic difference
+	in old html (4),
+
+	.header
+
+	<div class="header">
+	<div class="footer">
+
+	in new html (5)
+	header
+	{}
+	<header>
+	<footer>
+
+	<nav>		for navigation (menu)
+	web storage
+		localStorage		store some text in the clients machine
+	geo location			latitude longitude	(google maps)
+
+	placeholder
+
+	regular expression symbols			
+		1) to check if the input matches given pattern or not
+	
+		symbol multiplicity
+
+	\d{3}				digit (3)		3 digits
+	\d{1,3}				minimum 1 digit, maximum 3 digits
+	\d{1,}				minimum 1 digit, no upper bound	(any much)
+	\D				non digit	(anything other than digit)
+	.				anything		(char, number, symbol)
+	[]				1 from the list of characters inside []
+	ex:		[aeiou]		any 1 letter from vowel
+			[a-z]		any lower case alphabet
+
+			[aeiou]+	1 or more vowel
+			[aeiou]*	0 or more vowel
+			[aeiou]?	0 or 1 vowel		(? means optional)
+
+	[A-Za-z]{1}[A-Za-z0-9]*([.][A-Za-z0-9]+)?@[A-Za-z][.](in|com|co.in)
+
+<table>
+</table>
+
+<div>
+</div>
+
+
+setting customer error message:
+<input type="text" id="username" required placeholder="Enter Name"
+  oninvalid="this.setCustomValidity('Enter User Name Here')"
+  oninput="this.setCustomValidity('')" />
+
+
+DOM	-Document Object Model		(represent html document as an object in memory)
+
+in programming, our aim is to represent anything as an object. 
+Printer connected to out system. I want to print, using a program. How can i do that? I need to represent the printer as an object in my program. so that i can call print method, scan method.
+
+i want to write text into a file in my computer, using a c/java program. How can i do that? represent the file as an object in memory. 
+	FILE f=fopen("filename.ext");
+	here f is an object in memory.
+
+our program can do anyting in memory, but not in a storage. whatever is in storage, should be loaded in memory as object.
+
+HTML document is seen as a tree made of nodes.
+root node is "HTML"
+there will be child nodes.
+
+	var x=document.getElementById("txt");			//x is an object rep of text box
+	var str	=x.value;					//value is a property of text object 
+
+		document is an object representation of the html file.
+	objects can have
+		properties		(value)
+		methods			(getElementById())
+		events
+
+	for text box, (input:text)	there are some events
+		onkeyup		onclick		onblur		onfocus
+
+	by id
+	by name
+		document.getElementById()
+		document.getElementsByName();			// returns array of objects
+		document.getElementsByClass();
+
+
+
+Basics of CSS
+1) Why we need CSS when we can do formating in HTML itself?
+	we dont need to write something multiple times (multiple files)
+
+
+	
+there are many tables in our web page.
+In our website, there are many web pages.
+all the tables should look 
+		same border
+		same background color
+		same font
+		
+if we create one stylesheet where we apply the style for a table. so that 
+	if i change the stylesheet, all tables look will change
+
+html programmer will work on html file
+css programmer will work on css file
+
+both will not mess each others code
+
+1) external stylesheet		<link rel="stylesheet" href="a.css">
+2) embedded stylesheet		<style>	p{	color:red	}	</style>
+3) in-line stylesheet		<p style="color:red">
+
+Database tables:		DONE
+some code that access the database, are independantly coded in java (core java) jdbc code
+
+spring boot, 
+you will just create controller classes that will map "url" with java code (java)
+
+
+html file		
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <object data="one.html" width="300" height="300"></object>
+            </td>
+            <td>
+                <object data="two.html" width="300" height="300"></object>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <object data="index.html" width="300" height="300"></object>
+            </td>
+            <td>
+                <object data="four.htm" width="300" height="300"></object>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
